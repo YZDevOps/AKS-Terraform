@@ -9,15 +9,14 @@ pool:
   vmImage: ubuntu-latest
 
 - task: TerraformCLI@0
-  displayname: Terraform Init
+  displayname: Terraform init
   inputs:
     command: 'init'
     allowTelemetryCollection: true
 
 - task: TerraformCLI@0
-  displayname: Terraform Plan
+  displayname: Terraform init
   inputs:
     command: 'plan'
     environmentServiceName: 'Terraformkubernetes'
     allowTelemetryCollection: true
- 
