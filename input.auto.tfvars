@@ -20,6 +20,8 @@ resource_group = "aksdemocluster-rg"
 
 cluster_name = "aksdemocluster"
 
+acrname= "clusterregister1976"
+
 dns_name = "aksdemocluster"
 
 admin_username = "aksuser"
