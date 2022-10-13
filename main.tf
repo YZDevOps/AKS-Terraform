@@ -45,7 +45,7 @@ resource "azurerm_role_assignment" "role_acrpull" {
 
 resource "azurerm_container_registry" "acr" {
   name                = var.acr_name
-  resource_group_name = azurerm_resource_group.aks-rg.name
+  resource_group_name = azurerm_resource_group.aks_rg.name
   location            = var.location
   sku                 = "Standard"
   admin_enabled       = true
@@ -81,6 +81,6 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
   }
 
   tags = {
-    Environment = "Demo"
+    Environment = "test"
   }
 }
