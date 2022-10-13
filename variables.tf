@@ -56,6 +56,9 @@ variable "admin_username" {
 variable "kubernetes_version" {
   type    = string
 }
+variable "acrname" {
+  type    = string
+}
 
 #AKS Agent pools
 variable "agent_pools" {
