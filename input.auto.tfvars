@@ -2,9 +2,9 @@ aks_vnet_name = "aksvnet"
 
 sshkvsecret = "akssshpubkey"
 
-clientidkvsecret = "spn-id"
+clientidkvsecret = "my-app-spn-client-id"
 
-spnkvsecret = "spn-secret"
+spnkvsecret = "my-app-spn-secret"
 
 vnetcidr = ["10.0.0.0/24"]
 
@@ -14,7 +14,7 @@ keyvault_rg = "aksdemo-rg"
 
 keyvault_name = "aksdemocluster-kv"
 
-azure_region = "australiaeast"
+azure_region = "West Europe"
 
 resource_group = "aksdemocluster-rg"
 
