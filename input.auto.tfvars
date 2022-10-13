@@ -26,6 +26,8 @@ dns_name = "aksdemocluster"
 
 admin_username = "aksuser"
 
+acr_name       = "yzacr1976"
+
 kubernetes_version = "1.21.7"
 
 agent_pools = {
