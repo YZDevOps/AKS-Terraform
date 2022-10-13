@@ -16,7 +16,9 @@ data "azurerm_key_vault_secret" "spn_secret" {
   name         = var.spnkvsecret
   key_vault_id = data.azurerm_key_vault.azure_vault.id
 }
-
+data "azuread_service_principal" "aks_principal" {
+  application_id         = data.azurerm_key_vault_secret.spn_id.value 
+}
 resource "azurerm_virtual_network" "aks_vnet" {
   name                = var.aks_vnet_name
   resource_group_name = azurerm_resource_group.aks_rg.name
