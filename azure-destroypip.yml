@@ -15,6 +15,13 @@ steps:
       command: 'init'
       allowTelemetryCollection: true
   - task: TerraformCLI@0
+    displayName: Terraform Plan
+    inputs:
+      command: 'plan'
+      environmentServiceName: 'My-App-SPN'
+      allowTelemetryCollection: false
+  - task: TerraformCLI@0
+    displayName: Terraform destroy
     inputs:
       command: 'destroy'
       environmentServiceName: 'My-App-SPN'
