@@ -33,4 +33,7 @@ agent_pools = {
       count           = 2
       vm_size         = "Standard_D2_v2"
       os_disk_size_gb = "30"
+      type                = "VirtualMachineScaleSets"
+      availability_zones  = [1, 2, 3]
+      enable_auto_scaling = True
     }
