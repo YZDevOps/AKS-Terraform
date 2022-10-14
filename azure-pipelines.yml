@@ -20,4 +20,9 @@ steps:
       command: 'plan'
       environmentServiceName: 'My-App-SPN'
       allowTelemetryCollection: false
- 
+  - task: TerraformCLI@0
+    displayName: Terraform apply
+    inputs:
+      command: 'apply'
+      environmentServiceName: 'My-App-SPN'
+      allowTelemetryCollection: true
