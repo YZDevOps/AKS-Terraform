@@ -35,5 +35,5 @@ agent_pools = {
       os_disk_size_gb = "30"
       type                = "VirtualMachineScaleSets"
       availability_zones  = [1, 2, 3]
-      enable_auto_scaling = True
+      
     }
